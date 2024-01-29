@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* targets html element with associated name */
+body {
+  font-family: 'Darker Grotesque';
+  font-size: 40px;
+  color: rgb(100, 155, 220);
+  background-color: rgb(179,206,229);
+  padding: 20px;
+}
+
+h1 {
+  font-size: 50px;
+}
+
+h2 {
+  color: black;
+}
+
+/* Custom name for css. targets div with same class*/
+.game-container {
+  background-color: ghostwhite;
+  width: 484px;
+}
+
+.game-panel {
+  background-color: rgb(247,202,201);
+}
+
+.game-board {
+  border: 2px solid black;
+  position: relative;
+}
+
+.score {
+  font-size: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+.cell {
+  border: 1px solid black;
+  width: 48px;
+  height:48px;
+  cursor: pointer;
+}
+
+.end-game-screen {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(122, 12, 10, 0.7);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+.end-game-text {
+  font-size: 48px;
+  text-transform: uppercase;
+  font-family: 'Press Start 2P';
+}
+
+.btn {
+  font-size: 24px;
+  font-family: 'Darker Grotesque';
+  padding: 4px 20px 8px 20px;
+  cursor: pointer;
+  text-transform: uppercase;
+  border: 2px solid black;
+}
+
+.btn:hover {
+  background-color: grey;
+}
+
+.hidden {
+  display: none;
+}
+
+.cell-clicked {
+  background-color: rgb(154, 152, 152);
+  cursor: not-allowed;
+}
+
+.cell-bomb {
+  background-image: url('./images/bomb.png');
+  background-size: contain;
+  background-position: center;
+}
+
+.win {
+  background-color: aquamarine;
+}
+
